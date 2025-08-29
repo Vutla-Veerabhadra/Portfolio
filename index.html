@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Vutla Veerabhadra - Portfolio | Blending Technology, Creativity &
+      Leadership
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">VVB</span>
+        </div>
+
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <button class="nav-btn" onclick="scrollToSection('contact')">
+          Get In Touch
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Vutla Veerabhadra</span>
+        </h1>
+
+        <div class="hero-tagline">
+          <span class="typing-text"
+            >Blending Technology, Creativity & Leadership</span
+          >
+        </div>
+
+        <p class="hero-description">
+          Full-Stack Developer & ServiceNow Expert with a passion for AI,
+          Cybersecurity, and innovative web solutions. Combining technical
+          expertise with creative leadership to build the future of technology.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="scrollToSection('projects')">
+            <i class="fas fa-download"></i>
+            View My Work
+          </button>
+
+          <button class="btn-secondary" onclick="scrollToSection('contact')">
+            <i class="fas fa-envelope"></i>
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="stat-number">8.88</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="stat-number">2</div>
+          <div class="stat-label">ServiceNow Certifications</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Major Projects</div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" onclick="scrollToSection('about')">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            A passionate B.Tech student with a unique blend of technical
+            expertise and creative leadership skills. I believe in the power of
+            innovation and the importance of effective communication in
+            technology.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Who I Am</h3>
+            <p>
+              I'm a passionate B.Tech student with a strong foundation in
+              Information Technology. My journey in technology started with a
+              curiosity to understand how things work, and it has evolved into a
+              passion for creating innovative solutions that make a difference.
+            </p>
+            <p>
+              I specialize in ServiceNow development, full-stack web
+              development, and have a keen interest in emerging technologies
+              like AI/ML and blockchain. My academic excellence (8.88 CGPA)
+              reflects my commitment to learning and growth.
+            </p>
+
+            <!-- Achievement Cards -->
+            <div class="achievements">
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <span>1st Place - Code-Wars Coding Competition</span>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+                <span>Winner - G-20 Model Summit</span>
+              </div>
+
+              <div class="achievement-card">
+                <div class="achievement-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <span>3-Time Winner - Poster Presentation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-education">
+            <h4>Education Journey</h4>
+            <div class="education-cards">
+              <div class="education-card">
+                <div class="education-header">
+                  <h5>B.Tech (Information Technology)</h5>
+                  <span class="year">2026</span>
+                </div>
+                <p class="school">
+                  Aditya Institute of Technology and Management
+                </p>
+                <span class="score">CGPA: 8.88</span>
+              </div>
+
+              <div class="education-card">
+                <div class="education-header">
+                  <h5>Intermediate (MPC)</h5>
+                  <span class="year">2022</span>
+                </div>
+                <p class="school">Sri Chaitanya Junior College</p>
+                <span class="score">Percentage: 80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Discover my innovative projects that showcase the perfect blend of
+            technical expertise, creative problem-solving, and cutting-edge
+            technologies.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header project-gold">
+              <div class="project-icon">
+                <i class="fas fa-sparkles"></i>
+              </div>
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>Python</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>FitFusion: Live Fashion Recommender + 3D Try-On</h3>
+              <p>
+                A web-based fashion recommendation system combining
+                collaborative filtering and content-based filtering with an
+                interactive 3D virtual try-on feature for an immersive shopping
+                experience.
+              </p>
+              <div class="project-features">
+                <span>AI/ML</span>
+                <span>3D Rendering</span>
+                <span>Real-time</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header project-emerald">
+              <div class="project-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="project-tech">
+                <span>EfficientNet</span>
+                <span>Blockchain</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Hybrid Ransomware Detection System</h3>
+              <p>
+                A hybrid deep learning-based ransomware detection model
+                integrating EfficientNet for feature extraction and DFFNN for
+                classification, with blockchain-based audit layer for secure
+                logging.
+              </p>
+              <div class="project-features">
+                <span>Cybersecurity</span>
+                <span>Deep Learning</span>
+                <span>Blockchain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header project-rose">
+              <div class="project-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Handcrafted Jewellery E-commerce</h3>
+              <p>
+                A comprehensive e-commerce platform for handcrafted jewellery
+                with advanced features like AR try-on, secure payment
+                integration, and inventory management.
+              </p>
+              <div class="project-features">
+                <span>E-commerce</span>
+                <span>AR Technology</span>
+                <span>Payment Gateway</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience & Certifications</h2>
+          <p class="section-subtitle">
+            My professional journey showcases continuous growth, learning, and
+            achievement in the ever-evolving world of technology.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div>
+                  <h3>ServiceNow Internship - ITSM & Platform Development</h3>
+                  <p class="company">ServiceNow</p>
+                </div>
+                <span class="year">2024</span>
+              </div>
+              <p>
+                Successfully completed an internship focused on hands-on
+                learning and development within the ServiceNow platform. Gained
+                practical experience in configuring IT Service Management (ITSM)
+                modules, customizing forms, creating workflows, and implementing
+                business rules.
+              </p>
+              <div class="timeline-skills">
+                <span>ServiceNow</span>
+                <span>ITSM</span>
+                <span>Workflows</span>
+                <span>Business Rules</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div>
+                  <h3>ServiceNow Certified System Administrator (CSA)</h3>
+                  <p class="company">ServiceNow</p>
+                </div>
+                <span class="year">2024</span>
+              </div>
+              <p>
+                Earned the prestigious ServiceNow CSA certification,
+                demonstrating expertise in platform administration, user
+                management, and system configuration.
+              </p>
+              <div class="timeline-skills">
+                <span>Platform Administration</span>
+                <span>User Management</span>
+                <span>System Configuration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <h3>ServiceNow Certified Application Developer (CAD)</h3>
+                  <p class="company">ServiceNow</p>
+                </div>
+                <span class="year">2024</span>
+              </div>
+              <p>
+                Achieved CAD certification, showcasing advanced development
+                skills in creating custom applications, integrations, and
+                complex workflows on the ServiceNow platform.
+              </p>
+              <div class="timeline-skills">
+                <span>Custom Applications</span>
+                <span>Integrations</span>
+                <span>Complex Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <div>
+                  <h3>NPTEL Certification - Programming & Data Structures</h3>
+                  <p class="company">IIT Kharagpur</p>
+                </div>
+                <span class="year">2023</span>
+              </div>
+              <p>
+                Completed certifications in "Programming, Data Structures And
+                Algorithms Using Python" and "Programming In Java" from the
+                prestigious Indian Institute of Technology Kharagpur.
+              </p>
+              <div class="timeline-skills">
+                <span>Python</span>
+                <span>Java</span>
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-subtitle">
+            A comprehensive skill set that combines technical prowess with
+            creative leadership, enabling me to deliver innovative solutions and
+            drive successful projects.
+          </p>
+        </div>
+
+        <div class="skills-content">
+          <div class="skills-column">
+            <h3><i class="fas fa-code"></i> Technical Skills</h3>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Python & AI/ML</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>ServiceNow Platform</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Web Development (MERN)</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Cybersecurity</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Blockchain Technology</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Database Management</span>
+                <span class="skill-level">87%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-column">
+            <h3><i class="fas fa-users"></i> Personal & Professional Skills</h3>
+
+            <div class="skill-cards">
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Marketing & Strategy</h4>
+                <p>
+                  Digital marketing, brand development, and strategic planning
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h4>Content Writing</h4>
+                <p>
+                  Creative writing, technical documentation, and storytelling
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h4>Team Leadership</h4>
+                <p>Project management, team coordination, and mentorship</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <h4>Innovation & Creativity</h4>
+                <p>Problem-solving, design thinking, and creative solutions</p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h4>Communication</h4>
+                <p>
+                  Public speaking, presentation skills, and stakeholder
+                  management
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-card-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h4>Adaptability</h4>
+                <p>Quick learning, flexibility, and embracing change</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career Objective Section -->
+    <section class="career-objective">
+      <div class="container">
+        <h2>Career Objective</h2>
+        <p>
+          I am committed to continuous learning and innovation, blending
+          cutting-edge technology with creative leadership to deliver solutions
+          that make a meaningful impact. My goal is to contribute to
+          technology-driven organizations where I can leverage my unique
+          combination of technical expertise, marketing acumen, and leadership
+          skills to drive innovation and growth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Let's connect and explore opportunities to collaborate on innovative
+            projects that blend technology with creativity and leadership.
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+919705016976">+91-9705016976</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:veerusaivutla@gmail.com"
+                  >veerusaivutla@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Srikakulam, Andhra Pradesh, India</p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <h4>Follow Me</h4>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/Vutla-Veerabhadra"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/veerabhadra-vutla-5a5652290"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/veeru__writes/"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@Wibewithv"
+                  target="_blank"
+                  class="social-icon"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Resume Download -->
+            <button class="btn-primary full-width">
+              <i class="fas fa-download"></i>
+              Download Resume
+            </button>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Send Message</h3>
+
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Subject" required />
+              </div>
+
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  rows="5"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary full-width">
+                <i class="fas fa-envelope"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">VV</div>
+          <p>Blending Technology, Creativity & Leadership</p>
+          <div class="footer-social">
+            <a href="https://github.com/Vutla-Veerabhadra" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/veerabhadra-vutla-5a5652290"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/veeru__writes/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@Wibewithv" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footer-copyright">
+            <p>
+              © 2024 Vutla Veerabhadra. All rights reserved. | Designed with ❤️
+              for innovation
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
